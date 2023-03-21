@@ -1,0 +1,536 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 55px;
+  width: 100%;
+  /* border: 1px solid black; */
+  clear: both;
+  background: rgba(105, 118, 136,1);
+}
+.where{
+  height: 450px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+  background: rgba(105, 118, 136,1);
+}
+.why{
+  height: 350px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.visit{
+  height: 500px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+  background: rgba(213, 218, 221, 1);
+}
+.visit-the-gym{
+  height: 500px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.have-you-visit{
+  height: 500px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.volunteer{
+  height: 400px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid black; */
+  clear: both;
+  background: rgba(20, 29, 37, 1);
+}
+.footer-left{
+  width: 50%;
+  height: 150px;
+  /* border: 1px solid pink; */
+  float: left;
+}
+.footer-right{
+  width: 50%;
+  height: 150px;
+  /* border: 1px solid pink; */
+  float: left;
+}
+.footer-bottom{
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid pink; */
+  float: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+nav ul{
+  margin: 0;
+}
+nav ul li{
+    padding-top: 10px;
+    color: white;
+}
+/* nav ul li:nth-child(3){
+  padding-top: 10px;
+}
+nav ul li:nth-child(4){
+  padding-top: 10px;
+} */
+nav ul li{
+  list-style-type: none;
+  float: left;
+  margin-right: 1%;
+    font-size: 1.3rem;
+}
+nav ul li:nth-child(1), nav ul li:nth-child(2){
+  margin-top: 10px;
+}
+nav ul li:nth-child(4){
+  margin-left: 33%;
+    margin-right: 23%;
+}
+nav ul li:last-child{
+  margin-left: 26%;
+}
+nav ul li:nth-child(3){
+  display: none;
+}
+nav ul li button{
+  width: 72px;
+    height: 28px;
+    border-radius: 5px;
+    border-style: none;
+}
+.where{
+  background-image: url('../photos/grit-photo.webp');
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.where-title h1{
+  text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    padding: 25px 0;
+}
+.where-paragraph p{
+  text-align: center;
+    font-size: 2.2rem;
+    margin: 0 13%;
+    color: white;
+    line-height: 3rem;
+}
+.where-watch{
+  text-align: center;
+  margin-top: 17px;
+}
+.where-watch span{
+  font-size: 2rem;
+    color: white;
+}
+.where-watch span i{
+  font-size: 2.5rem;
+}
+.why-title h2{
+  text-align: center;
+    font-size: 3rem;
+    margin-top: 32px;
+}
+.why-paragraph p{
+  text-align: center;
+    font-size: 1.6rem;
+    margin: 0 24%;
+    line-height: 3rem;
+}
+.visit-img img{
+  height: 200px;
+    width: 59%;
+    margin: 61px auto 20px;
+    display: block;
+}
+.visit-title h4{
+  font-size: 1.7rem;
+    text-align: center;
+}
+.visit-paragraph p{
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 13%;
+  line-height: 2rem;
+}
+.visit-button{
+  text-align: center;
+    margin-top: 20px;
+}
+.visit-button button{
+  width: 135px;
+    height: 38px;
+    font-size: 1.3rem;
+    text-align: center;
+    background: rgba(213, 218, 221, 1);
+    border: 1px solid gray;
+}
+.you-visit-img img{
+  height: 200px;
+    width: 59%;
+    margin: 61px auto 20px;
+    display: block;
+}
+.you-visit-title h4{
+  font-size: 1.7rem;
+    text-align: center;
+}
+.you-visit-paragraph p{
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 13%;
+  line-height: 2rem;
+}
+.you-visit-button{
+  text-align: center;
+    margin-top: 20px;
+}
+.you-visit-button button{
+  width: 135px;
+    height: 38px;
+    font-size: 1.3rem;
+    text-align: center;
+    background: rgba(213, 218, 221, 1);
+    border: 1px solid gray;
+}
+.volunteer h3{
+  text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+.volunteer p{
+  text-align: center;
+    font-size: 1.6rem;
+    margin: 0 24%;
+    line-height: 3rem;
+}
+.volunteer-button{
+  text-align: center;
+    margin-top: 20px;
+}
+.volunteer-button button{
+  width: 135px;
+    height: 38px;
+    font-size: 1.3rem;
+    text-align: center;
+    background: transparent;
+    border: 1px solid gray;
+}
+.emojis ul{
+  list-style-type: none;
+}
+.emojis ul li{
+  float: left;
+    font-size: 2.5rem;
+    color: white;
+}
+.site-map span{
+  color: white;
+}
+.contribute span{
+  color: white;
+  
+}
+.gym-title{
+  margin-left: 71%;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.gym-title span{
+  color: white;
+}
+.gym-title span:nth-child(1){
+  display: block;
+}
+.addy p{
+  color: white;
+  margin-left: 71%;
+  font-size: 1.3rem;
+}
+.addy p span{
+  display: block;
+}
+.last-sentence{
+  width: 90%;
+    height: 50px;
+    float: left;
+}
+.last-sentence p{
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 44px
+
+}
+.last-logo{
+  width: 10%;
+    height: 50px;
+    float: left;
+}
+.last-logo img{
+  width: 40px;
+  margin-left: 50px;
+}
+.emojis{
+  margin-top: 20px;
+}
+.site-map{
+  margin-top: 9px;
+}
+.site-map span:nth-child(1){
+  display: block;
+  color: gray;
+  margin-left: 44px;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+.site-map span:nth-child(2){
+  margin-left: 44px;
+    font-size: 1.2rem;
+}
+.site-map span:nth-child(3){
+  margin-left: 15px;
+    font-size: 1.2rem;
+}
+.contribute{
+  margin-top: 14px;
+}
+.contribute span:nth-child(1){
+  display: block;
+  color: gray;
+  margin-left: 44px;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+.contribute span:nth-child(2){
+  margin-left: 44px;
+    font-size: 1.2rem;
+}
+.contribute span:nth-child(3){
+  margin-left: 15px;
+    font-size: 1.2rem;
+}
+.footer-right{
+  padding-right: 25px;
+}
+.pointer{
+  cursor: pointer;
+}
+/* ******************************************** */
+/* MEDIA QUERIES */
+/* ******************************************** */
+@media (max-width: 1424px){
+  nav ul li:last-child{
+    margin-left: 22%;
+  }
+}
+@media (max-width: 1136px){
+  nav ul li:last-child{
+    margin-left: 18%;
+  }
+}
+@media (max-width: 1024px){
+  .gym-title{
+    margin-left: 61%;
+  }
+  .why-paragraph p{
+    line-height: unset;
+  }
+  .visit-paragraph p{
+    line-height: unset;
+  }
+  .you-visit-paragraph p{
+    line-height: unset;
+  }
+  .volunteer p{
+    line-height: unset;
+  }
+  .addy p{
+  margin-left: 61%;
+}
+.last-logo img{
+  margin-left: 18px;
+}
+}
+@media (max-width: 948px){
+  nav ul li:last-child{
+    margin-left: 15%;
+  }
+}
+@media (max-width: 931px){
+  nav ul li:last-child{
+    margin-left: 13%;
+  }
+}
+@media (max-width: 845px){
+  .gym-title{
+    margin-left: 47%;
+  }
+  .addy p{
+  margin-left: 47%;
+}
+  .last-logo img{
+    display: none;
+  }
+}
+@media (max-width: 828px){
+  nav ul li:last-child{
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .why-title h2{
+    margin-top: 25px;
+  }
+  .visit{
+    height: 1000px;
+  }
+  .visit-paragraph p{
+    font-size: 1.6rem;
+  }
+  .you-visit-paragraph p{
+    font-size: 1.6rem;
+  }
+  .visit-the-gym{
+    width:100%;
+  }
+  .have-you-visit{
+    width: 100%;
+  }
+
+}
+@media (max-width: 715px){
+  nav ul li:nth-child(4){
+    margin-left: 28%;
+  }
+  nav ul li:last-child{
+    margin-left: 3%;
+  }
+  
+}
+@media (max-width: 723px){
+  .last-sentence p{
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px){
+  footer{
+    height: 50px;
+  }
+  .footer-left, .footer-right{
+    display: none;
+  }
+  .last-logo img{
+    margin: 0 auto;
+    display: block;
+  }
+  .last-sentence{
+    height: 0;
+  }
+  .last-sentence p{
+    display: none;
+  }
+  .last-logo{
+    width: 100%;
+  }
+  .footer-bottom{
+    border: none;
+  }
+  nav ul li:nth-child(3){
+    display: list-item;
+    font-size: 3rem;
+  }
+  nav ul li:nth-child(1),nav ul li:nth-child(2), nav ul li:last-child {
+    display: none;
+  }
+  nav ul li:nth-child(4){
+    margin-left: 75%;
+    margin-right: 2px;
+  }
+
+  .why{
+    display: none;
+  }
+}
+@media (max-width: 536px){
+  .why, .volunteer, .where-paragraph P{
+    display: none;
+  }
+  .visit-img img, .you-visit-img img{
+    margin-top: 20px;
+  }
+  .volunteer p, .visit-paragraph p, .you-visit-paragraph p{
+    font-size: 1.4rem;
+
+  }
+}
+@media (max-width: 370px){
+  nav ul li:nth-child(4){
+    margin-left: 60%;
+    margin-right: 2px;
+  }
+}
+@media (max-width: 247px){
+  nav ul li:nth-child(4){
+    margin-left: 34%;
+    margin-right: 2px;
+  }
+}
